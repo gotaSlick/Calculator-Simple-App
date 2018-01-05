@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MVC calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/handlers.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+    window.onload = function() {
+        //console.log("init")
+        init();
+    }
+    </script>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div>
+        <input type="number" name="arg1" id="arg1">
+        <button id="addButton">+</button>
+        <button id="subtractButton">-</button>
+        <button id="multiplyButton">*</button>
+        <button id="divideButton">/</button>
+        <input type="number" name="arg2" id="arg2"><br>
+        <!--<button type="submit" id="equalsButton">=</button>-->
+        <p id="resultDisplay"> </p>
+    </div>
+</body>
+
+</html>
+<!-- 0. submit 2 numbers 
+	1. see the result
+	2. input 1 arg
